@@ -1,5 +1,6 @@
 package pack_JavaStudy;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Vertical_Maneuvering_Equipment {
@@ -8,20 +9,20 @@ public class Vertical_Maneuvering_Equipment {
 			Scanner sc = new Scanner(System.in);
 			System.out.print("입체기동장치 갯수 : ");
 			int EquipmentCount = sc.nextInt();
-			
-			int[] EquipmentGas = new int[EquipmentCount];
-			int Equipment_Num = EquipmentCount-1;
-
-			for (int i = EquipmentGas.length; i > 0; i--) {
-				System.out.print(i+" ");
-				EquipmentGas[Equipment_Num] = sc.nextInt();
-				Equipment_Num--;
+			ArrayList<Integer> EquipmentNum = new ArrayList<>(EquipmentCount);
+			int startNum = EquipmentCount-1;
+			for (int i = EquipmentCount; i > 0; i--) {
+				EquipmentNum.add(0);
+			}
+			for (int i = EquipmentCount; i > 0; i--) {
+				System.out.print(i + " ");
+				EquipmentNum.set(startNum, sc.nextInt());
+				startNum--;
 			}
 			int idx = 1;
-			for(int i : EquipmentGas) {
+			for(int i : EquipmentNum) {
 				System.out.println(idx+ "  " + i);
 				idx++;
 			}
-			
 		}
 }
