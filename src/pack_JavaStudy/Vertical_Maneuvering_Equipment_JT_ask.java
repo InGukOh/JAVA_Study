@@ -29,20 +29,6 @@ public class Vertical_Maneuvering_Equipment_JT_ask {
 					}
 				}
 			}
-			int tmpNum, tmpGas; // 정렬을 위한 임시변수
-			for (int i = 0; i < n - 1; i++) {
-				for (int j = i + 1; j < n; j++) {
-					if (machines[i].a > machines[j].a) { // 식별번호 오름차순 정렬
-						tmpNum = machines[i].a;
-						machines[i].a = machines[j].a;
-						machines[j].a = tmpNum;
-						tmpGas = machines[i].b; // 가스보유량을 묶어서 이동
-						machines[i].b = machines[j].b;
-						machines[j].b = tmpGas;
-					}
-				}
-			}
-			
 			return machines;
 		}
 				
@@ -54,8 +40,8 @@ public class Vertical_Maneuvering_Equipment_JT_ask {
 				Vertical_Maneuvering_Equipment_JT_ask[] c;
 				c = mack(n);
 				System.out.println("식별번호\t:\t가스보유량");
-				for (int i = 0; i < n; i++) {
-					System.out.println(c[i].a + "\t:\t" + c[i].b);
+				for(Vertical_Maneuvering_Equipment_JT_ask i : c) {
+					System.out.println(i.a + "  " + i.b);
 				}
 				sc.close();
 	}
