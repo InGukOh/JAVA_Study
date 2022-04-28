@@ -10,6 +10,9 @@ public class Collatz {
 	            answer = -1;
 	        } else {
 	            while (true) {
+	            	if(numTlong==1) {
+	            		answer = 0;
+	            	}
 		            if(answer == 500) {
 						answer = -1;
 						break;
