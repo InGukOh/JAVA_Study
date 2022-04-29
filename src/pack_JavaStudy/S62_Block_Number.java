@@ -1,6 +1,6 @@
 package pack_JavaStudy;
 
-public class Block_Number {
+public class S62_Block_Number {
 
 	public static void main(String[] args) {
 		String phone_number = "01033334444";

@@ -1,6 +1,6 @@
 package pack_JavaStudy;
 
-public class Collatz {
+public class S59_Collatz {
 
 	public static void main(String[] args) {
 		int num= 6;

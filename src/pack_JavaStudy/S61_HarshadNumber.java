@@ -1,6 +1,6 @@
 package pack_JavaStudy;
 
-public class HarshadNumber {
+public class S61_HarshadNumber {
 
 	public static void main(String[] args) {
 		int x = 13;

@@ -2,7 +2,7 @@ package pack_JavaStudy;
 
 import java.util.Scanner;
 
-public class Even_N_Odd {
+public class S57_Even_N_Odd {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

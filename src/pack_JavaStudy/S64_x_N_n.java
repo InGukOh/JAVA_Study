@@ -3,7 +3,7 @@ package pack_JavaStudy;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Progremers {
+public class S64_x_N_n {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();
@@ -22,3 +22,4 @@ public class Progremers {
         return answer;
     }
 }
+//https://programmers.co.kr/learn/courses/30/lessons/12954/solution_groups?language=java

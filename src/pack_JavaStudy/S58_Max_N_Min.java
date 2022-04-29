@@ -3,7 +3,7 @@ package pack_JavaStudy;
 import java.util.ArrayList;
 import java.util.function.IntFunction;
 
-public class Max_N_Min {
+public class S58_Max_N_Min {
 
 	public static void main(String[] args) {
 		int n =3;

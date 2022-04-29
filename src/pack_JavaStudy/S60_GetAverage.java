@@ -1,6 +1,6 @@
 package pack_JavaStudy;
 
-public class GetMean {
+public class S60_GetAverage {
 
 	public static void main(String[] args) {
 		int[] arr = {1,2,3,4};

@@ -2,7 +2,7 @@ package pack_JavaStudy;
 
 import java.util.Arrays;
 
-public class Array_addition {
+public class S63_Array_addition {
 
 	public static void main(String[] args) {
 		int[][] arr1 = { {1}, {2} };
