@@ -3,20 +3,22 @@ package pack_JavaStudy;
 public class S46_Claping {
 	
 	public static void main(String[] args) {
-		
-		int insert = 3;
-		
-		String answer = "";
-		
-		for (int i = 1; i <= insert; i++) {
-			if(i%2 == 1) {
-				answer += "수";
-			} else {
-				answer +="박";
+		int n = 10;
+		int answer = 0;
+		for(int i=2; i<=n; i++) {
+			if(i%2 ==0 && i !=2) {
+				continue;
+			}
+			int count =0;
+			for(int j=2; j<=i; j++) {
+				if(i%j==0) {
+					count++;
+				}
+			}
+			if(count==1) {
+	                answer++;
 			}
 		}
-		System.out.println(answer);
-		
+		System.out.println(answer);  
 	}
-
 }
