@@ -7,10 +7,10 @@ public class S36_Dart_Game {
 		String dartResult = "1S2D*3T"; //
 		int answer = 0;
 		int[] round = new int[3];
-        char[] carr = dartResult.toCharArray();
+        char[] carr = dartResult.toCharArray(); //분해
        
         int idx = -1;
-        for (int i=0;i<carr.length;i++) {
+        for (int i=0; i<carr.length; i++) {
             if (carr[i] >= '0' && carr[i] <= '9') {
                 idx++; 
                 round[idx] += Integer.parseInt(String.valueOf(carr[i]));
