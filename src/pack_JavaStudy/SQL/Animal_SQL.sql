@@ -1,20 +1,20 @@
 create database FCT;
 use FCT;
-create table Animals_INS(
+create table Animal_INS(
 ANIMAL_ID			VARCHAR(7)	not null,
 ANIMAL_TYPE			VARCHAR(50)	not null,
-DATETIMES			DATETIME	not null,
+DATETIME			DATETIME	not null,
 INTAKE_CONDITION	VARCHAR(20)	not null,
 NAME				VARCHAR(50)			,
 SEX_UPON_INTAKE		VARCHAR(90) not null
 );
 
-insert into Animals_ins values('A399552','Dog','2013-10-14 15:38:00','Normal','Jack','Neutered Male');
-insert into Animals_ins values('A379998','Dog','2013-10-23 11:42:00','Normal','Disciple','Intact Male');
-insert into Animals_ins values('A370852','Dog','2013-11-03 15:04:00','Normal','Katie','Spayed Female');
-insert into Animals_ins values('A403564','Dog','2013-11-18 17:03:00','Normal','Anna','Spayed Female');
+insert into Animal_ins values('A349996','Cat','2018-01-22 14:32:00','Normal','Sugar','Neutered Male');
+insert into Animal_ins values('A350276','Cat','2017-08-13 13:50:00','Normal','Jewel','Spayed Female');
+insert into Animal_ins values('A396810','Dog','2016-08-22 16:13:00','Injured','Raven','Spayed Female');
+insert into Animal_ins values('A410668','Cat','2015-11-19 13:41:00','Normal','Raven','Spayed Female');
 
-
+select Animal_ID,Name,DateTime from Animal_INS order by Name asc , dateTime desc; /*22/06/13 S_34*/
 select * from Animals_INS order by DATETIMES asc;
 SELECT DATETIMES FROM Animals_INS WHERE 1=1 AND DATETIMES IN (SELECT max(DATETIMES) FROM Animals_INS);
 /*SELECT DATETIME
@@ -27,4 +27,4 @@ select * from usertbl order by mdate asc;
 desc Animals_ins;
 select * from Animals_ins;
 
-drop table Animals_INS;
+drop table Animal_INS;
