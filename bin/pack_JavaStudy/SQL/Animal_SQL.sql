@@ -13,6 +13,7 @@ insert into Animal_ins values('A349996','Cat','2018-01-22 14:32:00','Normal','Su
 insert into Animal_ins values('A350276','Cat','2017-08-13 13:50:00','Normal','Jewel','Spayed Female');
 insert into Animal_ins values('A396810','Dog','2016-08-22 16:13:00','Injured','Raven','Spayed Female');
 insert into Animal_ins values('A410668','Cat','2015-11-19 13:41:00','Normal','Raven','Spayed Female');
+select Animal_ID from Animal_INS where Name != null order by Animal_ID asc;/*22/06/15 S27*/
 select Animal_ID,Name from Animal_INS where INTAKE_CONDITION ='Sick' order by Animal_ID asc;/*22/06/15 S29*/
 select Animal_ID,Name from Animal_INS where INTAKE_CONDITION !='Aged' order by Animal_ID asc; /*22/06/14 S31*/
 select Animal_ID,Name from Animal_INS order by Animal_ID asc;/*22/06/14 S30*/
