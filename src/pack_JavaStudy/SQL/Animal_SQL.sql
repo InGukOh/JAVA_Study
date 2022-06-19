@@ -14,7 +14,7 @@ insert into Animal_ins values('A350276','Cat','2017-08-13 13:50:00','Normal','Je
 insert into Animal_ins values('A396810','Dog','2016-08-22 16:13:00','Injured','Raven','Spayed Female');
 insert into Animal_ins values('A410668','Cat','2015-11-19 13:41:00','Normal',null,'Spayed Female');
 select * from Animal_INS;
-
+SELECT DATETIME FROM Animal_INS WHERE 1=1 AND DATETIME IN (SELECT MAX(DATETIME) FROM Animal_INS);/*22/06/20 S18*/
 SELECT DATETIME FROM Animal_INS WHERE 1=1 AND DATETIME IN (SELECT MAX(DATETIME) FROM Animal_INS);/*22/06/20 S19*/
 select Animal_ID from Animal_INS where Name is null order by Animal_ID asc;/*22/06/20 S20*/
 select Name,DateTime from Animal_INS order by Animal_ID desc;/*22/06/15 S26*/
