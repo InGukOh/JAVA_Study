@@ -2,7 +2,7 @@ package pack_JavaStudy_2;
 
 public class S00_Quard_Zip {
 
-	// Lv.2 - 쿼드압축 후 개수 세기
+	
 		// 0과 1로 이루어진 2^n x 2^n 크기의 2차원 정수 배열 arr이 있습니다.
 		// 당신은 이 arr을 쿼드 트리와 같은 방식으로 압축하고자 합니다.
 		/* 당신이 압축하고자 하는 특정 영역을 S라고 정의합니다.
